@@ -81,7 +81,6 @@ ul {
 }
 
 aside {
-  position: fixed;
   padding-top: 58px;
   flex-basis: 385px;
   background-color: var(--color-bacground-aside);
@@ -128,7 +127,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: linear;
 }
-.main-image:hover {
+.main-image__scale {
   transform: scale(150%) translate(64px, 86px);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -163,7 +162,6 @@ address a {
 }
 
 main {
-  margin-left: var(--margin-left-main_section);
   padding-top: 58px;
   background-color: var(--color-bacground-main);
   animation: main-up 1s linear;
@@ -209,6 +207,12 @@ main section {
 }
 .opacity-text:hover {
   opacity: 1;
+}
+
+.nav-span {
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 480px) {
